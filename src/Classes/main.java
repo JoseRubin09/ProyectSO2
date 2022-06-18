@@ -15,11 +15,22 @@ public class main {
 
     public static Telefono telefono1 = new Telefono();
     public static Node newNode;
+    public static Queue<Node> cola1P1 = new LinkedList<>();
+    public static Queue<Node> cola2P1 = new LinkedList<>();
+    public static Queue<Node> cola3P1 = new LinkedList<>();
+    public static Queue<Node> cola1P2 = new LinkedList<>();
+    public static Queue<Node> cola2P2 = new LinkedList<>();
+    public static Queue<Node> cola3P2 = new LinkedList<>();
+    public static Queue<Node> colaRefuerzoP1 = new LinkedList<>();
+    public static Queue<Node> colaRefuerzoP2 = new LinkedList<>();
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        
         for(int i=0; i<3;i++){
             newNode = telefono1.settingNode(i);
             System.out.println(newNode.getCopas());
