@@ -16,6 +16,8 @@ import java.util.Queue;
 public class main {
 
     public static Telefono telefono1 = new Telefono();
+    public static Telefono telefono2 = new Telefono();
+    public static admin adm = new admin();
     public static Node newNode;
     public static Queue<Node> cola1P1 = new LinkedList<>();
     public static Queue<Node> cola2P1 = new LinkedList<>();
@@ -36,39 +38,19 @@ public class main {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        Interfaz.setVisible(true);
-        
-        
-
-       
-        
-
+//        Interfaz.setVisible(true);
         
         //funcionesMssimo.resetTextPanes();
         
-
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-  
-                
-        
                 //InterfazPlantas.countdownJOSE.setText(Integer.toString(Main.contadorMassimo));  
         
-        
-        
-        for(int i=0; i<3;i++){
-            newNode = telefono1.settingNode(i);
-            System.out.println(newNode.getCopas());
-        }
+        adm.createTelef();
+        System.out.println(cola1P1.peek());
+        System.out.println(cola1P2.peek());
+        System.out.println(cola2P1.peek());
+        System.out.println(cola2P2.peek());
+        System.out.println(cola3P1.peek());
+        System.out.println(cola3P2.peek());
     }
     
 }

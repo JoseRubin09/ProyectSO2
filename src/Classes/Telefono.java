@@ -5,6 +5,7 @@
  */
 package Classes;
 
+import static java.lang.Math.random;
 import java.util.Random;
 
 /**
@@ -17,6 +18,7 @@ public class Telefono {
     int copas;
     int planta;
     int countdown;
+    String tipo;
     String carta1;
     String carta2;
     String carta3;
@@ -30,8 +32,38 @@ public class Telefono {
         return id;
     }
     
-    private int getPriority(){
-        
+    private int getPriority(int planta){
+        int numRandom;
+        Random random = new Random();
+        copas = 0;
+        if (planta == 1){
+            //Camara 80%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 80) copas+=1000;
+            //Pantalla 75%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 75) copas+=500;
+            //Pin Carga 84%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 84) copas+=500;
+            //Botones 85%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 85) copas+=1000;
+            
+        }else{
+            //Camara 80%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 80) copas+=1600;
+            //Pantalla 75%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 75) copas+=400;
+            //Pin Carga 84%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 84) copas+=400;
+            //Botones 85%
+            numRandom = random.nextInt(100) + 1;
+            if (numRandom <= 85) copas+=1200;
+        }
         return copas;
     }
     
@@ -70,8 +102,8 @@ public class Telefono {
     public Node settingNode(int planta){
         this.shuffleDeck();
         id = this.getNewId();
-        copas = this.getPriority();
-        Node newNode = new Node(id,copas,planta,countdown,carta1,carta2,carta3,carta4);
+        copas = this.getPriority(planta);
+        Node newNode = new Node(id, copas, planta, countdown, tipo, carta1, carta2, carta3, carta4);
         return newNode;
     }
 }

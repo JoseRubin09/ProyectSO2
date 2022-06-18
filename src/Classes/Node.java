@@ -15,13 +15,15 @@ public class Node {
     private int copas;
     private int planta;
     private int countdown;
+    private int cola;
+    private String tipo;
     private String carta1;
     private String carta2;
     private String carta3;
     private String carta4;
     private Node next;
     
-    public Node(String id,int copas,int planta,int countdown,String carta1,String carta2,String carta3,String carta4) {
+    public Node(String id,int copas,int planta,int countdown,String tipo, String carta1,String carta2,String carta3,String carta4) {
     this.id = id;
     this.copas = copas;
     this.planta = planta;
@@ -156,6 +158,34 @@ public class Node {
      */
     public void setNext(Node next) {
         this.next = next;
+    }
+
+    /**
+     * @return the cola
+     */
+    public int getCola() {
+        return cola;
+    }
+
+    /**
+     * @param cola the cola to set
+     */
+    public void setCola(int cola) {
+        this.cola = cola;
+    }
+
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
     
 }
