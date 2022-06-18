@@ -5,7 +5,7 @@
 package Classes;
 
 import static Classes.main.Interfaz;
-import static Classes.main.queue;
+
 
 
 /**
@@ -13,7 +13,7 @@ import static Classes.main.queue;
  * @author massimo
  */
 public class funcionesMassimo {
-    
+    /*
     public void resetTextPanes(){
         String text1 = "    ";
         for (nodito item: queue) {
@@ -27,5 +27,5 @@ public class funcionesMassimo {
         
         
     }
-    
+     */
 }
