@@ -3,6 +3,9 @@ import interfaces.Interfaz;
 import java.util.Random;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +21,7 @@ public class main {
     public static Telefono telefono1 = new Telefono();
     public static Telefono telefono2 = new Telefono();
     public static admin adm = new admin();
+    public static IA IA = new IA();
     public static Node newNode;
     public static Queue<Node> cola1P1 = new LinkedList<>();
     public static Queue<Node> cola2P1 = new LinkedList<>();
@@ -27,6 +31,8 @@ public class main {
     public static Queue<Node> cola3P2 = new LinkedList<>();
     public static Queue<Node> colaRefuerzoP1 = new LinkedList<>();
     public static Queue<Node> colaRefuerzoP2 = new LinkedList<>();
+    public static int tiempodia;
+    
     /**
      * @param args the command line arguments
      */
@@ -35,20 +41,28 @@ public class main {
     
     public static funcionesMassimo funcionesMassimo = new funcionesMassimo();
  
-    
+   
     public static void main(String[] args) {
         // TODO code application logic here
         //funcionesMssimo.resetTextPanes();
         
                 //InterfazPlantas.countdownJOSE.setText(Integer.toString(Main.contadorMassimo));  
+       
         
-        adm.createTelef();
+         
         Interfaz.setVisible(true);
+
         
+        
+
+        
+         /*
+        adm.createTelef();
         for(int i=0; i<3;i++){
             newNode = telefono1.settingNode(i);
             System.out.println(newNode.getCopas());
         }
+
         //CODIGO PRUEBA PARA SETTEXTFIELDS
         for (int i = 0; i < 5; i++) {
             
@@ -84,7 +98,11 @@ public class main {
             cola3P2.add(telefono1.settingNode(i));
         }
         
-        funcionesMassimo.resetTextPanes();
+        
+
+ */
+         
+         
         
     }
     

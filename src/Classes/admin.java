@@ -150,19 +150,19 @@ public class admin {
                 main.cola1P1.add(main.cola1P1.poll());
                 break;
             case 21:
-                main.cola2P1.add(main.cola1P1.poll());
+                main.cola2P1.add(main.cola2P1.poll());
                 break;
             case 31:
-                main.cola3P1.add(main.cola1P1.poll());
+                main.cola3P1.add(main.cola3P1.poll());
                break;
             case 12:
-                main.cola1P2.add(main.cola1P1.poll());
+                main.cola1P2.add(main.cola1P2.poll());
                 break;
             case 22:
-                main.cola2P2.add(main.cola1P1.poll());
+                main.cola2P2.add(main.cola2P2.poll());
                 break;
             case 32:
-                main.cola3P2.add(main.cola1P1.poll());
+                main.cola3P2.add(main.cola3P2.poll());
                 break;
             default:
                 break;

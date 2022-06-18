@@ -5,6 +5,7 @@
  */
 package Classes;
 
+
 import static java.lang.Math.random;
 import java.util.Random;
 
@@ -23,7 +24,8 @@ public class Telefono {
     String carta2;
     String carta3;
     String carta4;
-
+    int idtelefono = 0;
+/*
     public String getNewId(){
         
         for (int i = 0; i<4; i++){
@@ -31,7 +33,17 @@ public class Telefono {
         }
         return id;
     }
-    
+     */
+    public String getNewId(){
+        id = Integer.toString(idtelefono);
+        idtelefono++;
+        
+        
+        
+        return id;
+        
+        
+    }
     private int getPriority(int planta){
         int numRandom;
         Random random = new Random();

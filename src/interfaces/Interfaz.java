@@ -4,6 +4,17 @@
  */
 package interfaces;
 
+import Classes.IA;
+import Classes.main;
+import static Classes.main.IA;
+import static Classes.main.Interfaz;
+import static Classes.main.adm;
+import static Classes.main.funcionesMassimo;
+import static Classes.main.tiempodia;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author massimo
@@ -37,7 +48,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        Tiempo = new javax.swing.JTextField();
+        tiempodia = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         Planta1Cola3 = new javax.swing.JTextPane();
@@ -51,6 +62,12 @@ public class Interfaz extends javax.swing.JFrame {
         Planta2Cola2 = new javax.swing.JTextPane();
         jScrollPane6 = new javax.swing.JScrollPane();
         Planta2Cola3 = new javax.swing.JTextPane();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        Refuerzo2 = new javax.swing.JTextPane();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        Refuerzo1 = new javax.swing.JTextPane();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -76,11 +93,11 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel3.setText("Cola 3");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel4.setText("Cola 2");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel5.setText("Cola 1");
@@ -92,22 +109,22 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel7.setText("Cola 2");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 120, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel8.setText("Cola 3");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 120, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jLabel9.setText("Arena");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, -1, -1));
 
-        Tiempo.addActionListener(new java.awt.event.ActionListener() {
+        tiempodia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TiempoActionPerformed(evt);
+                tiempodiaActionPerformed(evt);
             }
         });
-        jPanel1.add(Tiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 720, 120, 30));
+        jPanel1.add(tiempodia, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 720, 120, 30));
 
         jLabel10.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jLabel10.setText("Tiempo");
@@ -115,11 +132,11 @@ public class Interfaz extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(Planta1Cola3);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 50, 200));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 50, 200));
 
         jScrollPane1.setViewportView(Planta1Cola2);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 50, 200));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 50, 200));
 
         jScrollPane3.setViewportView(Planta1Cola1);
 
@@ -131,11 +148,27 @@ public class Interfaz extends javax.swing.JFrame {
 
         jScrollPane5.setViewportView(Planta2Cola2);
 
-        jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, 50, 200));
+        jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 170, 50, 200));
 
         jScrollPane6.setViewportView(Planta2Cola3);
 
-        jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 50, 200));
+        jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 170, 50, 200));
+
+        jScrollPane7.setViewportView(Refuerzo2);
+
+        jPanel1.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 170, 50, 200));
+
+        jScrollPane8.setViewportView(Refuerzo1);
+
+        jPanel1.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 200));
+
+        jLabel11.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        jLabel11.setText("Refuerzo");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        jLabel12.setText("Refuerzo");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 120, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
@@ -144,12 +177,24 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
         // TODO add your handling code here:
-        Tiempo.setText("hola");
+        main.tiempodia = Integer.parseInt(tiempodia.getText());
+        adm.createTelef();
+        funcionesMassimo.resetTextPanes();
+        
+        //try {
+            //funcionesMassimo.resetTextPanes();
+        //    TimeUnit.SECONDS.sleep(12/main.tiempodia);
+        //} catch (InterruptedException ex) {
+         //   Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
+        //}
+        //IA.decide();
+     
+        //funcionesMassimo.resetTextPanes();
     }//GEN-LAST:event_EmpezarActionPerformed
 
-    private void TiempoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TiempoActionPerformed
+    private void tiempodiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiempodiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TiempoActionPerformed
+    }//GEN-LAST:event_tiempodiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,9 +240,12 @@ public class Interfaz extends javax.swing.JFrame {
     public static javax.swing.JTextPane Planta2Cola1;
     public static javax.swing.JTextPane Planta2Cola2;
     public static javax.swing.JTextPane Planta2Cola3;
-    public static javax.swing.JTextField Tiempo;
+    public static javax.swing.JTextPane Refuerzo1;
+    public static javax.swing.JTextPane Refuerzo2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -213,5 +261,8 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    public static javax.swing.JTextField tiempodia;
     // End of variables declaration//GEN-END:variables
 }
