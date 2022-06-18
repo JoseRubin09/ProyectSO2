@@ -1,4 +1,6 @@
 package Classes;
+import interfaces.Interfaz;
+import java.util.Random;
 import java.util.LinkedList;
 import java.util.Queue;
 /*
@@ -26,8 +28,40 @@ public class main {
     /**
      * @param args the command line arguments
      */
+    
+    public static Interfaz Interfaz = new Interfaz();
+    
+    public static funcionesMassimo funcionesMssimo = new funcionesMassimo();
+ 
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        Interfaz.setVisible(true);
+        
+        
+
+       
+        
+
+        
+        //funcionesMssimo.resetTextPanes();
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+  
+                
+        
+                //InterfazPlantas.countdownJOSE.setText(Integer.toString(Main.contadorMassimo));  
         
         
         
