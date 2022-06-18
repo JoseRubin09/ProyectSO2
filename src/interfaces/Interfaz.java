@@ -42,15 +42,15 @@ public class Interfaz extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         Planta1Cola3 = new javax.swing.JTextPane();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        Planta1Cola2 = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        Planta1Cola1 = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        Planta2Cola1 = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        Planta2Cola2 = new javax.swing.JTextPane();
         jScrollPane6 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        Planta2Cola3 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -117,23 +117,23 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 50, 200));
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(Planta1Cola2);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 50, 200));
 
-        jScrollPane3.setViewportView(jTextPane2);
+        jScrollPane3.setViewportView(Planta1Cola1);
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 50, 200));
 
-        jScrollPane4.setViewportView(jTextPane3);
+        jScrollPane4.setViewportView(Planta2Cola1);
 
         jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 50, 200));
 
-        jScrollPane5.setViewportView(jTextPane4);
+        jScrollPane5.setViewportView(Planta2Cola2);
 
         jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, 50, 200));
 
-        jScrollPane6.setViewportView(jTextPane5);
+        jScrollPane6.setViewportView(Planta2Cola3);
 
         jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 50, 200));
 
@@ -189,7 +189,12 @@ public class Interfaz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton Empezar;
+    public static javax.swing.JTextPane Planta1Cola1;
+    public static javax.swing.JTextPane Planta1Cola2;
     public static javax.swing.JTextPane Planta1Cola3;
+    public static javax.swing.JTextPane Planta2Cola1;
+    public static javax.swing.JTextPane Planta2Cola2;
+    public static javax.swing.JTextPane Planta2Cola3;
     public static javax.swing.JTextField Tiempo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -208,10 +213,5 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
     // End of variables declaration//GEN-END:variables
 }
