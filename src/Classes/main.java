@@ -33,24 +33,59 @@ public class main {
     
     public static Interfaz Interfaz = new Interfaz();
     
-    public static funcionesMassimo funcionesMssimo = new funcionesMassimo();
+    public static funcionesMassimo funcionesMassimo = new funcionesMassimo();
  
     
     public static void main(String[] args) {
         // TODO code application logic here
-//        Interfaz.setVisible(true);
-        
         //funcionesMssimo.resetTextPanes();
         
                 //InterfazPlantas.countdownJOSE.setText(Integer.toString(Main.contadorMassimo));  
         
         adm.createTelef();
-        System.out.println(cola1P1.peek());
-        System.out.println(cola1P2.peek());
-        System.out.println(cola2P1.peek());
-        System.out.println(cola2P2.peek());
-        System.out.println(cola3P1.peek());
-        System.out.println(cola3P2.peek());
+        Interfaz.setVisible(true);
+        
+        for(int i=0; i<3;i++){
+            newNode = telefono1.settingNode(i);
+            System.out.println(newNode.getCopas());
+        }
+        //CODIGO PRUEBA PARA SETTEXTFIELDS
+        for (int i = 0; i < 5; i++) {
+            
+            cola1P1.add(telefono1.settingNode(i));
+        }
+        
+        
+        for (int i = 6; i < 10; i++) {
+            
+            cola2P1.add(telefono1.settingNode(i));
+        }
+        for (int i = 12; i < 15; i++) {
+            
+            cola3P1.add(telefono1.settingNode(i));
+        }
+
+        
+                
+        //CODIGO PRUEBA PARA SETTEXTFIELDS
+        for (int i = 0; i < 5; i++) {
+            
+            cola1P2.add(telefono1.settingNode(i));
+        }
+        
+        
+        for (int i = 6; i < 10; i++) {
+            
+            cola2P2.add(telefono1.settingNode(i));
+            
+        }
+        for (int i = 12; i < 15; i++) {
+            
+            cola3P2.add(telefono1.settingNode(i));
+        }
+        
+        funcionesMassimo.resetTextPanes();
+        
     }
     
 }
