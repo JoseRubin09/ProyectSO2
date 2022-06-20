@@ -33,6 +33,8 @@ public class main {
     public static Queue<Node> colaRefuerzoP2 = new LinkedList<>();
     public static int tiempodia;
     
+    //public static administrador administrador = new administrador();
+     public static administrador Threadadm;
     /**
      * @param args the command line arguments
      */
@@ -52,8 +54,7 @@ public class main {
          
         Interfaz.setVisible(true);
 
-        
-        
+
 
         
          /*

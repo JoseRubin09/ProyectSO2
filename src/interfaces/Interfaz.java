@@ -5,9 +5,12 @@
 package interfaces;
 
 import Classes.IA;
+import Classes.administrador;
+
 import Classes.main;
 import static Classes.main.IA;
 import static Classes.main.Interfaz;
+
 import static Classes.main.adm;
 import static Classes.main.funcionesMassimo;
 import static Classes.main.tiempodia;
@@ -15,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static Classes.main.Threadadm;
 /**
  *
  * @author massimo
@@ -68,6 +72,27 @@ public class Interfaz extends javax.swing.JFrame {
         Refuerzo1 = new javax.swing.JTextPane();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        Telefono1 = new javax.swing.JTextField();
+        Telefono2 = new javax.swing.JTextField();
+        vs = new javax.swing.JLabel();
+        catta1 = new javax.swing.JLabel();
+        carta2 = new javax.swing.JLabel();
+        carta3 = new javax.swing.JLabel();
+        carta4 = new javax.swing.JLabel();
+        carta5 = new javax.swing.JLabel();
+        carta6 = new javax.swing.JLabel();
+        carta7 = new javax.swing.JLabel();
+        carta8 = new javax.swing.JLabel();
+        T1Carta1 = new javax.swing.JTextField();
+        T1Carta2 = new javax.swing.JTextField();
+        T1Carta3 = new javax.swing.JTextField();
+        T1Carta4 = new javax.swing.JTextField();
+        T2Carta1 = new javax.swing.JTextField();
+        T2Carta2 = new javax.swing.JTextField();
+        T2Carta3 = new javax.swing.JTextField();
+        T2Carta4 = new javax.swing.JTextField();
+        Ganador1 = new javax.swing.JTextField();
+        Ganador2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -117,7 +142,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jLabel9.setText("Arena");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, -1, -1));
 
         tiempodia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,31 +195,99 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel12.setText("Refuerzo");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 120, -1, -1));
 
+        Telefono1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Telefono1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Telefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 90, -1));
+
+        Telefono2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Telefono2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Telefono2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 480, 90, -1));
+
+        vs.setFont(new java.awt.Font("Luminari", 0, 60)); // NOI18N
+        vs.setText("VS");
+        jPanel1.add(vs, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 90, 80));
+
+        catta1.setText("Carta 1");
+        jPanel1.add(catta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, -1, -1));
+
+        carta2.setText("Carta 2");
+        jPanel1.add(carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 540, -1, -1));
+
+        carta3.setText("Carta 3");
+        jPanel1.add(carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 540, -1, -1));
+
+        carta4.setText("Carta 4");
+        jPanel1.add(carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, -1, -1));
+
+        carta5.setText("Carta 1");
+        jPanel1.add(carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 540, -1, -1));
+
+        carta6.setText("Carta 2");
+        jPanel1.add(carta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 540, -1, -1));
+
+        carta7.setText("Carta 3");
+        jPanel1.add(carta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 540, -1, -1));
+
+        carta8.setText("Carta 4");
+        jPanel1.add(carta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, -1, -1));
+        jPanel1.add(T1Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 70, -1));
+        jPanel1.add(T1Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, 70, -1));
+        jPanel1.add(T1Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 70, -1));
+        jPanel1.add(T1Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 580, 70, -1));
+        jPanel1.add(T2Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 580, 70, -1));
+        jPanel1.add(T2Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 580, 70, -1));
+        jPanel1.add(T2Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 580, 70, -1));
+
+        T2Carta4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                T2Carta4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(T2Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, 80, -1));
+        jPanel1.add(Ganador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 80, -1));
+        jPanel1.add(Ganador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 510, 80, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
-        // TODO add your handling code here:
-        main.tiempodia = Integer.parseInt(tiempodia.getText());
-        adm.createTelef();
-        funcionesMassimo.resetTextPanes();
         
-        //try {
-            //funcionesMassimo.resetTextPanes();
-        //    TimeUnit.SECONDS.sleep(12/main.tiempodia);
-        //} catch (InterruptedException ex) {
-         //   Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
-        //}
-        //IA.decide();
-     
-        //funcionesMassimo.resetTextPanes();
+        
+       
+        Threadadm = new administrador();
+                
+        Threadadm.start();
+        
+        
+        
+            
+        
+        
     }//GEN-LAST:event_EmpezarActionPerformed
 
     private void tiempodiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tiempodiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tiempodiaActionPerformed
+
+    private void Telefono1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Telefono1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Telefono1ActionPerformed
+
+    private void Telefono2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Telefono2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Telefono2ActionPerformed
+
+    private void T2Carta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T2Carta4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_T2Carta4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,6 +327,8 @@ public class Interfaz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton Empezar;
+    public static javax.swing.JTextField Ganador1;
+    public static javax.swing.JTextField Ganador2;
     public static javax.swing.JTextPane Planta1Cola1;
     public static javax.swing.JTextPane Planta1Cola2;
     public static javax.swing.JTextPane Planta1Cola3;
@@ -242,6 +337,24 @@ public class Interfaz extends javax.swing.JFrame {
     public static javax.swing.JTextPane Planta2Cola3;
     public static javax.swing.JTextPane Refuerzo1;
     public static javax.swing.JTextPane Refuerzo2;
+    public static javax.swing.JTextField T1Carta1;
+    public static javax.swing.JTextField T1Carta2;
+    public static javax.swing.JTextField T1Carta3;
+    public static javax.swing.JTextField T1Carta4;
+    public static javax.swing.JTextField T2Carta1;
+    public static javax.swing.JTextField T2Carta2;
+    public static javax.swing.JTextField T2Carta3;
+    public static javax.swing.JTextField T2Carta4;
+    public static javax.swing.JTextField Telefono1;
+    public static javax.swing.JTextField Telefono2;
+    private javax.swing.JLabel carta2;
+    private javax.swing.JLabel carta3;
+    private javax.swing.JLabel carta4;
+    private javax.swing.JLabel carta5;
+    private javax.swing.JLabel carta6;
+    private javax.swing.JLabel carta7;
+    private javax.swing.JLabel carta8;
+    private javax.swing.JLabel catta1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -264,5 +377,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     public static javax.swing.JTextField tiempodia;
+    private javax.swing.JLabel vs;
     // End of variables declaration//GEN-END:variables
 }

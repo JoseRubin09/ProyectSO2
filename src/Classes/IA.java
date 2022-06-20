@@ -7,7 +7,7 @@ package Classes;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import static Classes.main.tiempodia;
+//import static Classes.main.tiempodia;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
@@ -31,7 +31,9 @@ public class IA {
 
         if(numRandom <= 40){
             //FIGHTO
+            main.funcionesMassimo.ResetDetallesBatalla(n1, n2);
             System.out.println("pelearon");
+         
             fight(n1,n2);
             
         }else if(numRandom > 40 && numRandom <= 67){
@@ -54,12 +56,14 @@ public class IA {
         int points2 = getPoints(n2);
         if (points1 > points2){
             //FALTA AGREGAR AL GANADOR EN EL TXT
+            main.funcionesMassimo.Ganador1();
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             
         }else{
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
+            main.funcionesMassimo.Ganador2();
         }
     }
     

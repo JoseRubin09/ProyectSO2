@@ -5,6 +5,7 @@
  */
 package Classes;
 
+import static Classes.main.funcionesMassimo;
 import java.util.Random;
 
 /**
@@ -78,6 +79,7 @@ public class admin {
         
         asignarQueue(main.telefono1.settingNode(1));
         asignarQueue(main.telefono1.settingNode(2));
+        funcionesMassimo.resetTextPanes();
         
     }
     
