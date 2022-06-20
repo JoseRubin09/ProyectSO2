@@ -82,7 +82,7 @@ public class admin {
         funcionesMassimo.resetTextPanes();
         
     }
-    
+    //implementar estoooooo
     public void createTelefRandom(){
         int numRandom;
         Random random = new Random();
@@ -131,6 +131,9 @@ public class admin {
     }
     
     public void backToQueue(){
+        if (!main.colaRefuerzoP1.isEmpty()) {
+            
+        
         Node n;
         Node n2;
         int numRandom;
@@ -142,6 +145,7 @@ public class admin {
             
             n2 = main.colaRefuerzoP2.poll();
             asignarQueue(n2);
+        }
         }
     }
     

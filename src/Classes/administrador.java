@@ -28,13 +28,23 @@ public class administrador extends Thread{
     while (this.stop){
         try {
             int Time= Integer.parseInt(Interfaz.tiempodia.getText());
+            Interfaz.EstadoAdmin.setText("Creando Telefonos");
+            Interfaz.EstadoIA.setText("Espera");
             adm.createTelef();
             funcionesMassimo.resetTextPanes();
+            Thread.sleep(1000);
+            adm.backToQueue();
+            Interfaz.EstadoAdmin.setText("Regresando a colas los refuerzos");
+            Interfaz.EstadoIA.setText("Espera");
+            Thread.sleep(1000);
             System.out.println("holaaaa");
             
             
             main.IA.decide();
+            Interfaz.EstadoAdmin.setText("Espera");
+            Interfaz.EstadoIA.setText("Decidiendo Ganador");
             Thread.sleep(11000/Time);
+            funcionesMassimo.ActualizarContador();
         
             funcionesMassimo.resetTextPanes();
             

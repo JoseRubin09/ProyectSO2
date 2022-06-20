@@ -30,6 +30,29 @@ public class Interfaz extends javax.swing.JFrame {
      */
     public Interfaz() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        Refuerzo1.setEditable(false);
+        Refuerzo2.setEditable(false);
+        Planta1Cola3.setEditable(false);
+        Planta1Cola2.setEditable(false);
+        Planta1Cola1.setEditable(false);
+        Planta2Cola1.setEditable(false);
+        Planta2Cola2.setEditable(false);
+        Planta2Cola3.setEditable(false);
+        EstadoAdmin.setEditable(false);
+        EstadoIA.setEditable(false);
+        Telefono1.setEditable(false);
+        Telefono2.setEditable(false);
+        Ganador1.setEditable(false);
+        Ganador2.setEditable(false);
+        T1Carta1.setEditable(false);
+        T1Carta2.setEditable(false);
+        T1Carta3.setEditable(false);
+        T1Carta4.setEditable(false);
+        T2Carta1.setEditable(false);
+        T2Carta2.setEditable(false);
+        T2Carta3.setEditable(false);
+        T2Carta4.setEditable(false);
     }
 
     /**
@@ -93,6 +116,14 @@ public class Interfaz extends javax.swing.JFrame {
         T2Carta4 = new javax.swing.JTextField();
         Ganador1 = new javax.swing.JTextField();
         Ganador2 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        EstadoAdmin = new javax.swing.JTextField();
+        EstadoIA = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -144,6 +175,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel9.setText("Arena");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, -1, -1));
 
+        tiempodia.setText("1");
         tiempodia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tiempodiaActionPerformed(evt);
@@ -253,6 +285,40 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(Ganador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 80, -1));
         jPanel1.add(Ganador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 510, 80, -1));
 
+        jLabel13.setText("Estado Admin");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, -1, -1));
+
+        jLabel14.setText("Estado IA");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
+
+        EstadoAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EstadoAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(EstadoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 90, -1));
+
+        EstadoIA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EstadoIAActionPerformed(evt);
+            }
+        });
+        jPanel1.add(EstadoIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 240, 90, -1));
+
+        jLabel15.setText("Telefono Tipo 1");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 450, -1, -1));
+
+        jLabel16.setText("Telefono Tipo 1");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel17.setText("ID");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 480, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel18.setText("ID");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, -1, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
         pack();
@@ -288,6 +354,14 @@ public class Interfaz extends javax.swing.JFrame {
     private void T2Carta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T2Carta4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_T2Carta4ActionPerformed
+
+    private void EstadoAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstadoAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EstadoAdminActionPerformed
+
+    private void EstadoIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstadoIAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EstadoIAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,6 +401,8 @@ public class Interfaz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton Empezar;
+    public static javax.swing.JTextField EstadoAdmin;
+    public static javax.swing.JTextField EstadoIA;
     public static javax.swing.JTextField Ganador1;
     public static javax.swing.JTextField Ganador2;
     public static javax.swing.JTextPane Planta1Cola1;
@@ -359,6 +435,12 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
