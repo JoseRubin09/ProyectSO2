@@ -32,7 +32,9 @@ public class main {
     public static Queue<Node> colaRefuerzoP1 = new LinkedList<>();
     public static Queue<Node> colaRefuerzoP2 = new LinkedList<>();
     public static int tiempodia;
-    
+    public static ReadFile txtAction = new ReadFile();
+    public static WriteFile write = new WriteFile();
+
     //public static administrador administrador = new administrador();
      public static administrador Threadadm;
     /**

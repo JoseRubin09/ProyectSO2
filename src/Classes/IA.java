@@ -5,6 +5,7 @@
  */
 package Classes;
 
+import static Classes.main.write;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 //import static Classes.main.tiempodia;
@@ -59,11 +60,13 @@ public class IA {
             main.funcionesMassimo.Ganador1();
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
+            write.writeData(n1.getTipo());
             
         }else{
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             main.funcionesMassimo.Ganador2();
+            write.writeData(n2.getTipo());
         }
     }
     
