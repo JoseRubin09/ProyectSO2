@@ -159,4 +159,143 @@ public class funcionesMassimo {
         
   
     }    
+        
+        
+        
+    public void ActualizarContador(){
+        //SET COLA1P1
+        
+        /*        
+        if (item.getCountdown()<8) {
+                item.setCountdown(item.getCountdown()+1);
+            }else{
+                item.setCountdown(0);
+                int copas =item.getCopas();
+                if(copas >= 3000){
+                
+                } else if(copas >= 2000){
+                    item.setCopas(3100);
+                    main.cola1P1.add(item);
+                    main.cola2P1.remove(item);
+
+                } else if(copas < 2000){
+                    item.setCopas(2100);
+                    main.cola2P1.add(item);
+                    main.cola3P1.remove(item);
+                }
+            }
+        */
+
+
+        
+        
+        //SET COLA2P1
+        
+        
+        for (Node item: cola2P1) {
+            
+            if (item.getCountdown()<8) {
+                System.out.println("menor 8 cola 2 p1");
+                item.setCountdown(item.getCountdown()+1);
+                
+            }else{
+    
+                    item.setCopas(3100);
+                    item.setCountdown(0);
+                    
+                    main.cola2P1.remove(item);
+                    System.out.println("remueve cola2p1");
+                    main.cola1P1.add(item);
+                    System.out.println("add cola2p1");
+                    
+                    
+
+    
+            }
+        }
+
+        
+        
+        //SET COLA3P1
+        
+        
+        for (Node item: cola3P1) {
+            
+            if (item.getCountdown()<8) {
+               System.out.println("menor 8 cola 3 p1");
+
+                item.setCountdown(item.getCountdown()+1);
+            }else{
+    
+                    item.setCopas(2100);
+                    item.setCountdown(0);
+                    
+                    main.cola3P1.remove(item);
+                    System.out.println("remueve cola3p1");
+                    main.cola2P1.add(item);
+                    System.out.println("add cola3p1");
+                    
+                  
+
+    
+            }
+           
+            
+        }
+
+        
+
+        
+        //SET COLA2P2
+        
+        for (Node item: cola2P2) {
+            if (item.getCountdown()<8) {
+                System.out.println("menor 8 cola 2 p2");
+                item.setCountdown(item.getCountdown()+1);
+            }else{
+    
+                    item.setCopas(3100);
+                    item.setCountdown(0);
+                    main.cola2P2.remove(item);
+                    System.out.println("remueve cola2p2");
+                    main.cola1P2.add(item);
+                    System.out.println("add cola2p2");
+                    
+                    
+
+    
+            }
+        }
+
+        
+        //SET COLA3P2
+       
+        
+        for (Node item: cola3P2) {
+            if (item.getCountdown()<8) {
+                System.out.println("menor 8 cola 3 p2");
+                item.setCountdown(item.getCountdown()+1);
+            }else{
+    
+                    item.setCopas(2100);
+                    item.setCountdown(0);
+                    main.cola3P2.remove(item);
+                    System.out.println("remueve cola3p2");
+                    main.cola2P2.add(item);
+                    System.out.println("add cola3p2");
+                    
+                    
+
+    
+            }
+        }
+
+       
+        
+
+
+        
+        
+        
+    }
 }

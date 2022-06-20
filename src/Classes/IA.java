@@ -28,6 +28,11 @@ public class IA {
         n1 = main.adm.checkFight1();
         n2 = main.adm.checkFight2();
         System.out.println("IA DECIDIENDO");
+        
+        //CONTADOR A 0
+        n1.setCountdown(0);
+        n2.setCountdown(0);
+        //CONTADOR A 0
 
         if(numRandom <= 40){
             //FIGHTO
@@ -56,11 +61,13 @@ public class IA {
         int points2 = getPoints(n2);
         if (points1 > points2){
             //FALTA AGREGAR AL GANADOR EN EL TXT
+            //meterentxt(n1)
             main.funcionesMassimo.Ganador1();
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             
         }else{
+            //meterentxt(n2)
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             main.funcionesMassimo.Ganador2();
