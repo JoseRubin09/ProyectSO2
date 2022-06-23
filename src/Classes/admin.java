@@ -5,6 +5,7 @@
  */
 package Classes;
 
+import static Classes.main.Interfaz;
 import static Classes.main.funcionesMassimo;
 import java.util.Random;
 
@@ -140,6 +141,7 @@ public class admin {
         Random random = new Random();
         numRandom = random.nextInt(100) + 1;
         if(numRandom <= 40){
+            Interfaz.EstadoAdmin.setText("Regresando refuerzos");
             n = main.colaRefuerzoP1.poll();
             asignarQueue(n);
             

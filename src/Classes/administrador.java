@@ -16,6 +16,8 @@ import java.util.logging.Logger;
  */
 public class administrador extends Thread{
     public boolean stop;
+    public int firstRound=0;
+    public int ciclos=-1;
     
     public administrador (){
         this.stop = true;
@@ -27,22 +29,43 @@ public class administrador extends Thread{
     public void run(){
     while (this.stop){
         try {
+            
+            
+            
+            
+            
             int Time= Integer.parseInt(Interfaz.tiempodia.getText());
+            
+            
             Interfaz.EstadoAdmin.setText("Creando Telefonos");
             Interfaz.EstadoIA.setText("Espera");
-            adm.createTelef();
+            
+            //Crear telefono
+            if (firstRound==0) {
+                adm.createTelef();
+            }else{
+                if (ciclos%2==0) {
+                adm.createTelef();
+            }
+            }
+            
+            
+            
             funcionesMassimo.resetTextPanes();
             Thread.sleep(1000);
             adm.backToQueue();
-            Interfaz.EstadoAdmin.setText("Regresando a colas los refuerzos");
+            //Interfaz.EstadoAdmin.setText("Regresando a colas los refuerzos");
             Interfaz.EstadoIA.setText("Espera");
             Thread.sleep(1000);
             System.out.println("holaaaa");
             
-            
+            if (funcionesMassimo.ColasVacias()==true) {
+                System.out.println("No se creo telefno");
+            }else{
             main.IA.decide();
+            }
             Interfaz.EstadoAdmin.setText("Espera");
-            Interfaz.EstadoIA.setText("Decidiendo Ganador");
+            //Interfaz.EstadoIA.setText("Decidiendo Ganador");
             Thread.sleep(11000/Time);
             funcionesMassimo.ActualizarContador();
         
@@ -51,13 +74,18 @@ public class administrador extends Thread{
        
             funcionesMassimo.EmptyDetallesBatalla();
             
+            firstRound++;
+            ciclos++;
             
+                
             
+        
             
             
         } catch (InterruptedException ex) {
             Logger.getLogger(administrador.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
 
     }
 }

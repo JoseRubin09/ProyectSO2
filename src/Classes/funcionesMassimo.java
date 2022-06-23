@@ -203,7 +203,7 @@ public class funcionesMassimo {
                     item.setCopas(3100);
                     item.setCountdown(0);
                     
-                    main.cola2P1.remove(item);
+                    //main.cola2P1.remove(item);
                     System.out.println("remueve cola2p1");
                     main.cola1P1.add(item);
                     System.out.println("add cola2p1");
@@ -230,7 +230,7 @@ public class funcionesMassimo {
                     item.setCopas(2100);
                     item.setCountdown(0);
                     
-                    main.cola3P1.remove(item);
+                    //main.cola3P1.remove(item);
                     System.out.println("remueve cola3p1");
                     main.cola2P1.add(item);
                     System.out.println("add cola3p1");
@@ -256,7 +256,7 @@ public class funcionesMassimo {
     
                     item.setCopas(3100);
                     item.setCountdown(0);
-                    main.cola2P2.remove(item);
+                    //main.cola2P2.remove(item);
                     System.out.println("remueve cola2p2");
                     main.cola1P2.add(item);
                     System.out.println("add cola2p2");
@@ -279,7 +279,7 @@ public class funcionesMassimo {
     
                     item.setCopas(2100);
                     item.setCountdown(0);
-                    main.cola3P2.remove(item);
+                    //main.cola3P2.remove(item);
                     System.out.println("remueve cola3p2");
                     main.cola2P2.add(item);
                     System.out.println("add cola3p2");
@@ -289,13 +289,28 @@ public class funcionesMassimo {
     
             }
         }
-
-       
         
 
-
-        
-        
-        
     }
+    
+    public boolean ColasVacias(){
+            
+        if ((cola1P2.isEmpty()&&cola2P2.isEmpty()&&cola3P2.isEmpty() )    ||   (cola1P1.isEmpty()&&cola2P1.isEmpty()&&cola3P1.isEmpty())) {
+            
+            return true;
+        }
+        return false;
+        
+                  
+            
+    }
+    
+    public static boolean isNumeric(String str) { 
+        try {  
+        Double.parseDouble(str);  
+        return true;
+        } catch(NumberFormatException e){  
+            return false;  
+            }  
+}
 }

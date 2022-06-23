@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static Classes.main.Threadadm;
+import javax.swing.JOptionPane;
 /**
  *
  * @author massimo
@@ -124,6 +125,8 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        DesicionIA = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -175,6 +178,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel9.setText("Arena");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, -1, -1));
 
+        tiempodia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tiempodia.setText("1");
         tiempodia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -296,14 +300,14 @@ public class Interfaz extends javax.swing.JFrame {
                 EstadoAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(EstadoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 90, -1));
+        jPanel1.add(EstadoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, 180, 30));
 
         EstadoIA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EstadoIAActionPerformed(evt);
             }
         });
-        jPanel1.add(EstadoIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 240, 90, -1));
+        jPanel1.add(EstadoIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, -1));
 
         jLabel15.setText("Telefono Tipo 1");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 450, -1, -1));
@@ -318,6 +322,10 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel18.setText("ID");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, -1, -1));
+        jPanel1.add(DesicionIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, 180, -1));
+
+        jLabel19.setText("Desicion IA");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
@@ -326,14 +334,16 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmpezarActionPerformed
         
-        
+        if (funcionesMassimo.isNumeric(Interfaz.tiempodia.getText()) ) {
        
         Threadadm = new administrador();
                 
         Threadadm.start();
         
         
-        
+        }else{
+            JOptionPane.showMessageDialog(null, "Ingrese un numero valido en Tiempo");
+        }
             
         
         
@@ -400,6 +410,7 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JTextField DesicionIA;
     private javax.swing.JToggleButton Empezar;
     public static javax.swing.JTextField EstadoAdmin;
     public static javax.swing.JTextField EstadoIA;
@@ -441,6 +452,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
