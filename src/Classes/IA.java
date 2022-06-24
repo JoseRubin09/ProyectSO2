@@ -44,7 +44,11 @@ public class IA {
             main.funcionesMassimo.ResetDetallesBatalla(n1, n2);
             System.out.println("pelearon");
             Interfaz.DesicionIA.setText("Pelea");
-         
+            //Cartas ON
+            main.funcionesMassimo.showcard1(n1);
+            main.funcionesMassimo.showcard2(n2);
+            main.funcionesMassimo.showarena(n1, n2);
+            
             fight(n1,n2);
             
         }else if(numRandom > 40 && numRandom <= 67){
@@ -68,19 +72,28 @@ public class IA {
         int points1 = getPoints(n1);
         int points2 = getPoints(n2);
         if (points1 > points2){
+            
+            
             //FALTA AGREGAR AL GANADOR EN EL TXT
             //meterentxt(n1)
+            
             main.funcionesMassimo.Ganador1();
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             write.writeData(n1.getTipo());
             
-        }else{
+        }else if(points1 < points2){
             //meterentxt(n2)
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             main.funcionesMassimo.Ganador2();
             write.writeData(n2.getTipo());
+        }else{
+            
+            main.adm.backToEnd(n1);
+            main.adm.backToEnd(n2);
+            main.funcionesMassimo.Empate1();
+            main.funcionesMassimo.Empate2();
         }
     }
     

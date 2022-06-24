@@ -54,6 +54,10 @@ public class Interfaz extends javax.swing.JFrame {
         T2Carta2.setEditable(false);
         T2Carta3.setEditable(false);
         T2Carta4.setEditable(false);
+        
+        
+        
+        
     }
 
     /**
@@ -65,6 +69,7 @@ public class Interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel21 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -127,17 +132,57 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         DesicionIA = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
+        rarac4p2 = new javax.swing.JLabel();
+        comunc4p2 = new javax.swing.JLabel();
+        comunc1p1 = new javax.swing.JLabel();
+        comunc2p1 = new javax.swing.JLabel();
+        comunc3p1 = new javax.swing.JLabel();
+        comunc4p1 = new javax.swing.JLabel();
+        comunc1p2 = new javax.swing.JLabel();
+        rarac1p1 = new javax.swing.JLabel();
+        comunc2p2 = new javax.swing.JLabel();
+        comunc3p2 = new javax.swing.JLabel();
+        rarac2p1 = new javax.swing.JLabel();
+        rarac3p1 = new javax.swing.JLabel();
+        rarac4p1 = new javax.swing.JLabel();
+        rarac1p2 = new javax.swing.JLabel();
+        rarac2p2 = new javax.swing.JLabel();
+        rarac3p2 = new javax.swing.JLabel();
+        epicac4p2 = new javax.swing.JLabel();
+        epicac1p1 = new javax.swing.JLabel();
+        epicac2p1 = new javax.swing.JLabel();
+        epicac3p1 = new javax.swing.JLabel();
+        epicac4p1 = new javax.swing.JLabel();
+        epicac1p2 = new javax.swing.JLabel();
+        epicac2p2 = new javax.swing.JLabel();
+        epicac3p2 = new javax.swing.JLabel();
+        legendariac4p2 = new javax.swing.JLabel();
+        legendariac1p1 = new javax.swing.JLabel();
+        legendariac2p1 = new javax.swing.JLabel();
+        legendariac3p1 = new javax.swing.JLabel();
+        legendariac4p1 = new javax.swing.JLabel();
+        legendariac1p2 = new javax.swing.JLabel();
+        legendariac2p2 = new javax.swing.JLabel();
+        legendariac3p2 = new javax.swing.JLabel();
+        arena1 = new javax.swing.JLabel();
+        arena2 = new javax.swing.JLabel();
+        arena3 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
+
+        jLabel21.setText("jLabel21");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Planta 1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Planta 2");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, -1, -1));
 
@@ -148,35 +193,42 @@ public class Interfaz extends javax.swing.JFrame {
                 EmpezarActionPerformed(evt);
             }
         });
-        jPanel1.add(Empezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 720, -1, -1));
+        jPanel1.add(Empezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 560, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cola 3");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Cola 2");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Cola 1");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Cola 1");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 120, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Cola 2");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 120, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Cola 3");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Arena");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 360, -1, -1));
 
         tiempodia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tiempodia.setText("1");
@@ -185,11 +237,12 @@ public class Interfaz extends javax.swing.JFrame {
                 tiempodiaActionPerformed(evt);
             }
         });
-        jPanel1.add(tiempodia, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 720, 120, 30));
+        jPanel1.add(tiempodia, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 650, 120, 30));
 
         jLabel10.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Tiempo");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 720, 100, 30));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 610, 100, 30));
 
         jScrollPane2.setViewportView(Planta1Cola3);
 
@@ -224,13 +277,16 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 200));
 
         jLabel11.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Refuerzo");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Refuerzo");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 120, -1, -1));
 
+        Telefono1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Telefono1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Telefono1ActionPerformed(evt);
@@ -238,6 +294,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jPanel1.add(Telefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 90, -1));
 
+        Telefono2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Telefono2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Telefono2ActionPerformed(evt);
@@ -246,86 +303,252 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(Telefono2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 480, 90, -1));
 
         vs.setFont(new java.awt.Font("Luminari", 0, 60)); // NOI18N
+        vs.setForeground(new java.awt.Color(255, 255, 255));
         vs.setText("VS");
-        jPanel1.add(vs, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 90, 80));
+        jPanel1.add(vs, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 430, 90, 80));
 
+        catta1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        catta1.setForeground(new java.awt.Color(255, 255, 255));
         catta1.setText("Carta 1");
-        jPanel1.add(catta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, -1, -1));
+        jPanel1.add(catta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, -1));
 
+        carta2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta2.setForeground(new java.awt.Color(255, 255, 255));
         carta2.setText("Carta 2");
-        jPanel1.add(carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 540, -1, -1));
+        jPanel1.add(carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 560, -1, -1));
 
+        carta3.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta3.setForeground(new java.awt.Color(255, 255, 255));
         carta3.setText("Carta 3");
-        jPanel1.add(carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 540, -1, -1));
+        jPanel1.add(carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
+        carta4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta4.setForeground(new java.awt.Color(255, 255, 255));
         carta4.setText("Carta 4");
-        jPanel1.add(carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, -1, -1));
+        jPanel1.add(carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 560, -1, -1));
 
+        carta5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta5.setForeground(new java.awt.Color(255, 255, 255));
         carta5.setText("Carta 1");
-        jPanel1.add(carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 540, -1, -1));
+        jPanel1.add(carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 560, -1, -1));
 
+        carta6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta6.setForeground(new java.awt.Color(255, 255, 255));
         carta6.setText("Carta 2");
-        jPanel1.add(carta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 540, -1, -1));
+        jPanel1.add(carta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 560, -1, -1));
 
+        carta7.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta7.setForeground(new java.awt.Color(255, 255, 255));
         carta7.setText("Carta 3");
-        jPanel1.add(carta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 540, -1, -1));
+        jPanel1.add(carta7, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 560, -1, -1));
 
+        carta8.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        carta8.setForeground(new java.awt.Color(255, 255, 255));
         carta8.setText("Carta 4");
-        jPanel1.add(carta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 540, -1, -1));
-        jPanel1.add(T1Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 70, -1));
-        jPanel1.add(T1Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, 70, -1));
-        jPanel1.add(T1Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 70, -1));
-        jPanel1.add(T1Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 580, 70, -1));
-        jPanel1.add(T2Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 580, 70, -1));
-        jPanel1.add(T2Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 580, 70, -1));
-        jPanel1.add(T2Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 580, 70, -1));
+        jPanel1.add(carta8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 560, -1, -1));
 
+        T1Carta1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T1Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 90, -1));
+
+        T1Carta2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T1Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 580, 90, -1));
+
+        T1Carta3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T1Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 580, 90, -1));
+
+        T1Carta4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T1Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 580, 90, -1));
+
+        T2Carta1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T2Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 580, 90, -1));
+
+        T2Carta2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(T2Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 580, 90, -1));
+
+        T2Carta3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        T2Carta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                T2Carta3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(T2Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 580, 90, -1));
+
+        T2Carta4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         T2Carta4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 T2Carta4ActionPerformed(evt);
             }
         });
-        jPanel1.add(T2Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, 80, -1));
-        jPanel1.add(Ganador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 80, -1));
-        jPanel1.add(Ganador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 510, 80, -1));
+        jPanel1.add(T2Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 580, 90, -1));
 
+        Ganador1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(Ganador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 480, 80, -1));
+
+        Ganador2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(Ganador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, 80, -1));
+
+        jLabel13.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Estado Admin");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, -1, -1));
 
+        jLabel14.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Estado IA");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, -1, -1));
 
+        EstadoAdmin.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         EstadoAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EstadoAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(EstadoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, 180, 30));
+        jPanel1.add(EstadoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 180, 30));
 
+        EstadoIA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         EstadoIA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EstadoIAActionPerformed(evt);
             }
         });
-        jPanel1.add(EstadoIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, -1));
+        jPanel1.add(EstadoIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 180, -1));
 
+        jLabel15.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Telefono Tipo 1");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 450, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 450, -1, -1));
 
+        jLabel16.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Telefono Tipo 1");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("ID");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 480, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("ID");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, -1, -1));
-        jPanel1.add(DesicionIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, 180, -1));
 
+        DesicionIA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(DesicionIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, -1));
+
+        jLabel19.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Desicion IA");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, -1));
+
+        rarac4p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac4p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, -1, -1));
+
+        comunc4p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc4p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, -1, -1));
+
+        comunc1p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc1p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, -1, -1));
+
+        comunc2p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc2p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, -1, -1));
+
+        comunc3p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc3p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 620, -1, -1));
+
+        comunc4p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc4p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+
+        comunc1p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc1p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 620, -1, -1));
+
+        rarac1p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac1p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, -1, -1));
+
+        comunc2p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc2p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 620, -1, -1));
+
+        comunc3p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/skeletons.png"))); // NOI18N
+        jPanel1.add(comunc3p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 620, -1, -1));
+
+        rarac2p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac2p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, -1, -1));
+
+        rarac3p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac3p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 620, -1, -1));
+
+        rarac4p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac4p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+
+        rarac1p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac1p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 620, -1, -1));
+
+        rarac2p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac2p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 620, -1, -1));
+
+        rarac3p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hog_rider.png"))); // NOI18N
+        jPanel1.add(rarac3p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 620, -1, -1));
+
+        epicac4p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac4p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, -1, -1));
+
+        epicac1p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac1p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, -1, -1));
+
+        epicac2p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac2p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, -1, -1));
+
+        epicac3p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac3p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 620, -1, -1));
+
+        epicac4p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac4p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+
+        epicac1p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac1p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 620, -1, -1));
+
+        epicac2p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac2p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 620, -1, -1));
+
+        epicac3p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/prince.png"))); // NOI18N
+        jPanel1.add(epicac3p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 620, -1, -1));
+
+        legendariac4p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac4p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, -1, -1));
+
+        legendariac1p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac1p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, -1, -1));
+
+        legendariac2p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac2p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, -1, -1));
+
+        legendariac3p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac3p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 620, -1, -1));
+
+        legendariac4p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac4p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+
+        legendariac1p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac1p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 620, -1, -1));
+
+        legendariac2p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac2p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 620, -1, -1));
+
+        legendariac3p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/electro_wizard.png"))); // NOI18N
+        jPanel1.add(legendariac3p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 620, -1, -1));
+
+        arena1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_178479 (1).png"))); // NOI18N
+        jPanel1.add(arena1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, -1));
+
+        arena2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_3730669 (1).png"))); // NOI18N
+        jPanel1.add(arena2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, -1, -1));
+
+        arena3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_4511059 (2).png"))); // NOI18N
+        jPanel1.add(arena3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, -1, -1));
+
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
+        background.setText("jLabel20");
+        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-190, -80, 1570, 980));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
@@ -372,6 +595,10 @@ public class Interfaz extends javax.swing.JFrame {
     private void EstadoIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstadoIAActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EstadoIAActionPerformed
+
+    private void T2Carta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T2Carta3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_T2Carta3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -434,6 +661,10 @@ public class Interfaz extends javax.swing.JFrame {
     public static javax.swing.JTextField T2Carta4;
     public static javax.swing.JTextField Telefono1;
     public static javax.swing.JTextField Telefono2;
+    public static javax.swing.JLabel arena1;
+    public static javax.swing.JLabel arena2;
+    public static javax.swing.JLabel arena3;
+    private javax.swing.JLabel background;
     private javax.swing.JLabel carta2;
     private javax.swing.JLabel carta3;
     private javax.swing.JLabel carta4;
@@ -442,6 +673,22 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel carta7;
     private javax.swing.JLabel carta8;
     private javax.swing.JLabel catta1;
+    public static javax.swing.JLabel comunc1p1;
+    public static javax.swing.JLabel comunc1p2;
+    public static javax.swing.JLabel comunc2p1;
+    public static javax.swing.JLabel comunc2p2;
+    public static javax.swing.JLabel comunc3p1;
+    public static javax.swing.JLabel comunc3p2;
+    public static javax.swing.JLabel comunc4p1;
+    public static javax.swing.JLabel comunc4p2;
+    public static javax.swing.JLabel epicac1p1;
+    public static javax.swing.JLabel epicac1p2;
+    public static javax.swing.JLabel epicac2p1;
+    public static javax.swing.JLabel epicac2p2;
+    public static javax.swing.JLabel epicac3p1;
+    public static javax.swing.JLabel epicac3p2;
+    public static javax.swing.JLabel epicac4p1;
+    public static javax.swing.JLabel epicac4p2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -454,6 +701,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -470,6 +718,22 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    public static javax.swing.JLabel legendariac1p1;
+    public static javax.swing.JLabel legendariac1p2;
+    public static javax.swing.JLabel legendariac2p1;
+    public static javax.swing.JLabel legendariac2p2;
+    public static javax.swing.JLabel legendariac3p1;
+    public static javax.swing.JLabel legendariac3p2;
+    public static javax.swing.JLabel legendariac4p1;
+    public static javax.swing.JLabel legendariac4p2;
+    public static javax.swing.JLabel rarac1p1;
+    public static javax.swing.JLabel rarac1p2;
+    public static javax.swing.JLabel rarac2p1;
+    public static javax.swing.JLabel rarac2p2;
+    public static javax.swing.JLabel rarac3p1;
+    public static javax.swing.JLabel rarac3p2;
+    public static javax.swing.JLabel rarac4p1;
+    public static javax.swing.JLabel rarac4p2;
     public static javax.swing.JTextField tiempodia;
     private javax.swing.JLabel vs;
     // End of variables declaration//GEN-END:variables

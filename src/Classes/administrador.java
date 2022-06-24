@@ -67,6 +67,9 @@ public class administrador extends Thread{
             Interfaz.EstadoAdmin.setText("Espera");
             //Interfaz.EstadoIA.setText("Decidiendo Ganador");
             Thread.sleep(11000/Time);
+            funcionesMassimo.cartasOff();
+            funcionesMassimo.arenasOff();
+            
             funcionesMassimo.ActualizarContador();
         
             funcionesMassimo.resetTextPanes();
