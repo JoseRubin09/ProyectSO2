@@ -34,6 +34,8 @@ public class main {
     public static int tiempodia;
     public static ReadFile txtAction = new ReadFile();
     public static WriteFile write = new WriteFile();
+    public static int ganadasJ=0;
+    public static int ganadasM=0;
 
     //public static administrador administrador = new administrador();
      public static administrador Threadadm;

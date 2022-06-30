@@ -5,6 +5,8 @@
  */
 package Classes;
 
+import static Classes.main.ganadasJ;
+import static Classes.main.ganadasM;
 import static Classes.main.write;
 import interfaces.Interfaz;
 import java.util.Random;
@@ -80,6 +82,8 @@ public class IA {
             main.funcionesMassimo.Ganador1();
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
+            main.ganadasJ++;
+            Interfaz.ganadasJose.setText(Integer.toString(ganadasJ));
             write.writeData(n1.getTipo());
             
         }else if(points1 < points2){
@@ -87,6 +91,9 @@ public class IA {
             main.adm.deadNode(n1);
             main.adm.deadNode(n2);
             main.funcionesMassimo.Ganador2();
+            
+            main.ganadasM++;
+            Interfaz.ganadasMassimo.setText(Integer.toString(ganadasM));
             write.writeData(n2.getTipo());
         }else{
             
