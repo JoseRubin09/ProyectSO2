@@ -13,6 +13,8 @@ import static Classes.main.cola3P1;
 import static Classes.main.cola3P2;
 import static Classes.main.colaRefuerzoP1;
 import static Classes.main.colaRefuerzoP2;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 
@@ -177,43 +179,18 @@ public class funcionesMassimo {
         
         
     public void ActualizarContador(){
-        //SET COLA1P1
         
-        /*        
-        if (item.getCountdown()<8) {
-                item.setCountdown(item.getCountdown()+1);
+
+        //cola2 pa cola1 P1
+        ArrayList arrayCola2P1 = new ArrayList();
+        Node n;
+        Object[] objects =  main.cola2P1.toArray();
+        arrayCola2P1.addAll(Arrays.asList(objects));
+        for(int i = 0; i<arrayCola2P1.size();i++){
+            n = (Node) arrayCola2P1.get(i);
+            if (n.getCountdown()<8){
+                n.setCountdown(n.getCountdown()+1);
             }else{
-                item.setCountdown(0);
-                int copas =item.getCopas();
-                if(copas >= 3000){
-                
-                } else if(copas >= 2000){
-                    item.setCopas(3100);
-                    main.cola1P1.add(item);
-                    main.cola2P1.remove(item);
-
-                } else if(copas < 2000){
-                    item.setCopas(2100);
-                    main.cola2P1.add(item);
-                    main.cola3P1.remove(item);
-                }
-            }
-        */
-
-
-        
-        
-        //SET COLA2P1
-        
-        
-        for (Node item: cola2P1) {
-            
-            if (item.getCountdown()<8) {
-                System.out.println("menor 8 cola 2 p1");
-                item.setCountdown(item.getCountdown()+1);
-                
-            }else{
-    
                     item.setCopas(3100);
                     item.setCountdown(0);
                     
@@ -224,21 +201,22 @@ public class funcionesMassimo {
                     
                     
 
-    
+                n.setCountdown(0);
+                cola2P1.remove(n);
+                cola1P1.add(n);
+                System.out.println("LO AGREGUE A LA OTRA COLA?? " + n.getId());
             }
         }
-
         
-        
-        //SET COLA3P1
-        
-        
-        for (Node item: cola3P1) {
-            
-            if (item.getCountdown()<8) {
-               System.out.println("menor 8 cola 3 p1");
-
-                item.setCountdown(item.getCountdown()+1);
+        //cola3 pa cola2 P1
+       ArrayList arrayCola3P1 = new ArrayList();
+        Node n2;
+        Object[] objects2 =  main.cola3P1.toArray();
+        arrayCola3P1.addAll(Arrays.asList(objects2));
+        for(int i = 0; i<arrayCola3P1.size();i++){
+            n2 = (Node) arrayCola3P1.get(i);
+            if (n2.getCountdown()<8){
+                n2.setCountdown(n2.getCountdown()+1);
             }else{
     
                     item.setCopas(2100);
@@ -252,20 +230,22 @@ public class funcionesMassimo {
                   
 
     
+                n2.setCountdown(0);
+                cola3P1.remove(n2);
+                cola2P1.add(n2);
+                System.out.println("LO AGREGUE A LA OTRA COLA?? " + n2.getId());
             }
-           
-            
         }
 
-        
-
-        
-        //SET COLA2P2
-        
-        for (Node item: cola2P2) {
-            if (item.getCountdown()<8) {
-                System.out.println("menor 8 cola 2 p2");
-                item.setCountdown(item.getCountdown()+1);
+        //cola2 pa cola1 P2
+        ArrayList arrayCola2P2 = new ArrayList();
+        Node n3;
+        Object[] objects3 =  main.cola2P2.toArray();
+        arrayCola2P2.addAll(Arrays.asList(objects3));
+        for(int i = 0; i<arrayCola2P2.size();i++){
+            n3 = (Node) arrayCola2P2.get(i);
+            if (n3.getCountdown()<8){
+                n3.setCountdown(n3.getCountdown()+1);
             }else{
     
                     item.setCopas(3100);
@@ -299,8 +279,29 @@ public class funcionesMassimo {
                     System.out.println("add cola3p2");
                     
                     
+                n3.setCountdown(0);
+                cola2P2.remove(n3);
+                cola1P2.add(n3);
+                System.out.println("LO AGREGUE A LA OTRA COLA?? " + n3.getId());
+            }
+        }
 
-    
+
+
+        //cola3 pa cola2 p2
+        ArrayList arrayCola3P2 = new ArrayList();
+        Node n4;
+        Object[] objects4 =  main.cola3P2.toArray();
+        arrayCola3P2.addAll(Arrays.asList(objects4));
+        for(int i = 0; i<arrayCola3P2.size();i++){
+            n4 = (Node) arrayCola3P2.get(i);
+            if (n4.getCountdown()<8){
+                n4.setCountdown(n4.getCountdown()+1);
+            }else{
+                n4.setCountdown(0);
+                cola3P2.remove(n4);
+                cola2P2.add(n4);
+                System.out.println("LO AGREGUE A LA OTRA COLA?? " + n4.getId());
             }
         }
         
