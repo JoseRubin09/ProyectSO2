@@ -54,6 +54,9 @@ public class Interfaz extends javax.swing.JFrame {
         T2Carta2.setEditable(false);
         T2Carta3.setEditable(false);
         T2Carta4.setEditable(false);
+        DesicionIA.setEditable(false);
+        ganadasMassimo.setEditable(false);
+        ganadasJose.setEditable(false);
         
         
         
@@ -165,9 +168,19 @@ public class Interfaz extends javax.swing.JFrame {
         legendariac2p2 = new javax.swing.JLabel();
         legendariac3p2 = new javax.swing.JLabel();
         arena1 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
         arena2 = new javax.swing.JLabel();
         arena3 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        ganadasJose = new javax.swing.JTextField();
+        ganadasMassimo = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
 
         jLabel21.setText("jLabel21");
 
@@ -540,15 +553,59 @@ public class Interfaz extends javax.swing.JFrame {
         arena1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_178479 (1).png"))); // NOI18N
         jPanel1.add(arena1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, -1));
 
+        jLabel22.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Xperia 10 IV");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
+
         arena2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_3730669 (1).png"))); // NOI18N
         jPanel1.add(arena2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, -1, -1));
 
         arena3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PngItem_4511059 (2).png"))); // NOI18N
         jPanel1.add(arena3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, -1, -1));
 
+        jLabel23.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("Xperia 1 IV");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 380, -1, -1));
+
+        ganadasJose.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(ganadasJose, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 80, -1));
+
+        ganadasMassimo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(ganadasMassimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 480, 80, -1));
+
+        jLabel27.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("Ganadas");
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 450, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("Ganadas");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, -1, -1));
+
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/back.png"))); // NOI18N
         background.setText("jLabel20");
-        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-190, -80, 1570, 980));
+        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -90, 1570, 980));
+
+        jLabel20.setText("jLabel20");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("Xperia 10 IV");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Xperia 10 IV");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Xperia 10 IV");
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 790));
 
@@ -689,6 +746,8 @@ public class Interfaz extends javax.swing.JFrame {
     public static javax.swing.JLabel epicac3p2;
     public static javax.swing.JLabel epicac4p1;
     public static javax.swing.JLabel epicac4p2;
+    public static javax.swing.JTextField ganadasJose;
+    public static javax.swing.JTextField ganadasMassimo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -701,7 +760,15 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
