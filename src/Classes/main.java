@@ -53,8 +53,10 @@ public class main {
                 //InterfazPlantas.countdownJOSE.setText(Integer.toString(Main.contadorMassimo));  
        
         
-         
+        
         Interfaz.setVisible(true);
+        funcionesMassimo.arenasOff();
+        funcionesMassimo.cartasOff(); 
 
 
 
